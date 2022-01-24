@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 375px;
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+}
+
+.card-container {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1em;
+  margin: 2em;
+}
+
+.image-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-card img {
+  width: 70%;
+  height: 100%;
+  margin: 2rem auto;
+  /* padding-top: 3rem; */
+  border-radius: 2rem;
+}
