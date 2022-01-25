@@ -12,18 +12,128 @@ body {
 .card-container {
   background-color: hsl(216, 50%, 16%);
   border-radius: 1em;
-  margin: 2em;
+  margin: 1em;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-card {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: -2rem;
 }
 .image-card img {
-  width: 70%;
-  height: 100%;
+  width: 90%;
   margin: 2rem auto;
-  /* padding-top: 3rem; */
-  border-radius: 2rem;
+  border-radius: 0.7rem;
+}
+
+.image-card img:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  /* background-color: hsl(178, 100%, 50%); */
+  opacity: 0.5;
+  background-image: url('images/icon-view.svg') no-repeat;
+  /* order: 1; */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem;
+}
+
+.ntf-coin {
+  margin-bottom: 1rem;
+}
+
+.nft-name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+
+.ntf-description {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+.ntf {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 2rem;
+}
+
+.coin {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+}
+
+.coin img {
+  margin-right: 0.3rem;
+}
+
+.coin .date {
+  padding-right: 2rem;
+}
+
+.date {
+  display: flex;
+  margin-left: 7.6rem;
+  color: hsl(215deg 51% 70%);
+  font-weight: 300;
+  align-items: center;
+}
+
+.date img {
+  margin-right: 0.5rem;
+}
+
+.line {
+  display: flex;
+  margin-bottom: 1.25rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.line::after {
+  content: '';
+  display: inline-block;
+  height: 0.01em;
+  vertical-align: bottom;
+  width: 195%;
+  margin-right: -100%;
+  background-color: hsl(215, 32%, 27%);
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+}
+
+.creator img {
+  border-radius: 4rem;
+  width: 10%;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+
+.name-creator {
+  margin-left: 1rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
 }
