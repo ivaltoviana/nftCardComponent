@@ -7,15 +7,17 @@ body {
   max-width: 375px;
   background-color: hsl(217, 54%, 11%);
   font-family: 'Outfit', sans-serif;
+  margin: auto;
+  width: 100%;
 }
 
 .card-container {
   background-color: hsl(216, 50%, 16%);
   border-radius: 1em;
-  margin: 1em;
-  margin-top: 6rem;
+  margin-top: 20%;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .image-card {
@@ -35,10 +37,8 @@ body {
   justify-content: center;
   align-items: center;
   transition: 1s;
-  /* background-color: hsl(178, 100%, 50%); */
   opacity: 0.5;
   background-image: url('images/icon-view.svg') no-repeat;
-  /* order: 1; */
 }
 
 .content {
@@ -46,7 +46,7 @@ body {
   flex-direction: column;
   align-content: flex-start;
   align-items: flex-start;
-  margin: 1rem;
+  margin: 1.7rem;
 }
 
 .ntf-coin {
@@ -136,4 +136,121 @@ body {
 .name {
   color: hsl(0, 0%, 100%);
   font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    width: 100%;
+    height: 15%;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .nft-name {
+    font-size: 2rem;
+  }
+
+  .ntf-description {
+    font-size: 1rem;
+  }
+
+  .coin {
+    font-size: 1rem;
+  }
+
+  .coin img {
+    width: 0.7rem;
+  }
+
+  .date {
+    margin-left: 7rem;
+    font-size: 1rem;
+  }
+
+  .date img {
+    width: 1.3rem;
+  }
+
+  .name-creator {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  div .card-container {
+    width: 100%;
+  }
+
+  .nft-name {
+    font-size: 2rem;
+  }
+
+  .ntf-description {
+    font-size: 1.2rem;
+  }
+
+  .coin {
+    font-size: 1.2rem;
+  }
+
+  .coin img {
+    width: 0.7rem;
+  }
+
+  .date {
+    margin-left: 5.7rem;
+    font-size: 1.2rem;
+  }
+
+  .date img {
+    width: 1.3rem;
+  }
+
+  .name-creator {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  div .card-container {
+    width: 160%;
+    font-size: 1.9rem;
+  }
+
+  .ntf {
+    display: flex;
+    align-items: center;
+  }
+
+  .nft-name {
+    font-size: 3rem;
+  }
+
+  .ntf-description {
+    font-size: 1.7rem;
+  }
+
+  .coin {
+    font-size: 1.6rem;
+  }
+
+  .coin img {
+    width: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .date {
+    margin-left: 15rem;
+    font-size: 1.6rem;
+  }
+
+  .date img {
+    width: 2rem;
+  }
+
+  .name-creator {
+    font-size: 2rem;
+  }
 }
