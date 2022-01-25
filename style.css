@@ -8,7 +8,11 @@ body {
   background-color: hsl(217, 54%, 11%);
   font-family: 'Outfit', sans-serif;
   margin: auto;
-  width: 100%;
+  /* width: 90%; */
+}
+
+.card-container {
+  width: 90%;
 }
 
 .card-container {
@@ -18,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 5%;
 }
 
 .image-card {
@@ -26,6 +31,7 @@ body {
   align-items: center;
   margin-bottom: -2rem;
 }
+
 .image-card img {
   width: 90%;
   margin: 2rem auto;
@@ -47,6 +53,7 @@ body {
   align-content: flex-start;
   align-items: flex-start;
   margin: 1.7rem;
+  /* width: 90%; */
 }
 
 .ntf-coin {
@@ -138,10 +145,11 @@ body {
   font-weight: 300;
 }
 
-@media (max-width: 768px) {
+/* medias queries */
+
+@media (min-width: 768px) {
   .card-container {
-    width: 100%;
-    height: 15%;
+    width: 90%;
   }
 
   .content {
@@ -165,7 +173,7 @@ body {
   }
 
   .date {
-    margin-left: 7rem;
+    margin-left: 2rem;
     font-size: 1rem;
   }
 
@@ -179,8 +187,9 @@ body {
 }
 
 @media (max-width: 1024px) {
-  div .card-container {
-    width: 100%;
+  .card-container {
+    width: 50%;
+    margin: 1rem auto;
   }
 
   .nft-name {
@@ -213,9 +222,10 @@ body {
   }
 }
 
-@media (min-width: 1440px) {
-  div .card-container {
-    width: 160%;
+@media (max-width: 1440px) {
+  .card-container {
+    width: 90%;
+    margin: 1rem auto;
     font-size: 1.9rem;
   }
 
@@ -225,15 +235,15 @@ body {
   }
 
   .nft-name {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .ntf-description {
-    font-size: 1.7rem;
+    font-size: 1.1rem;
   }
 
   .coin {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
 
   .coin img {
@@ -242,8 +252,8 @@ body {
   }
 
   .date {
-    margin-left: 15rem;
-    font-size: 1.6rem;
+    margin-left: 4rem;
+    font-size: 1rem;
   }
 
   .date img {
@@ -251,6 +261,6 @@ body {
   }
 
   .name-creator {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
