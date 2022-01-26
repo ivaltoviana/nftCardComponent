@@ -163,13 +163,33 @@ body {
   cursor: pointer;
 }
 
-.name a {
+.name {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
   font-weight: 300;
 }
 
-.name a:hover {
+.name:hover {
+  transition: 0.5s;
+  color: hsl(178, 100%, 50%);
+}
+
+/* footer */
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.5rem;
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  flex-direction: column;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  padding: 0.2rem;
+}
+
+.attribution a:hover {
   transition: 0.5s;
   color: hsl(178, 100%, 50%);
 }
